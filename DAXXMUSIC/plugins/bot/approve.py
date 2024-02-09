@@ -66,9 +66,9 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # List of random photo links
 random_photo_links = [
-    "https://telegra.ph/file/ca950c0b8316b968957fa.jpg",
-    "https://telegra.ph/file/ca950c0b8316b968957fa.jpg",
-    "https://telegra.ph/file/ca950c0b8316b968957fa.jpg",
+    "https://graph.org/file/de9f25f068f45d9c05de9.jpg",
+    "https://graph.org/file/85d2f4931db273eddaf6f.jpg",
+    "https://graph.org/file/70401d692e050d8d044e2.jpg",
     # Add more links as needed
 ]
 
