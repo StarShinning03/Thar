@@ -7,11 +7,11 @@ from DAXXMUSIC.utils.database import get_served_chats
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-MESSAGE = f"""Lᴇᴛ’s ɪɴᴛʀᴏᴅᴜᴄᴇ ʙᴇsᴛ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ + ᴍᴜsɪᴄ ʙᴏᴛ.
+MESSAGE = f"""**Lᴇᴛ’s ɪɴᴛʀᴏᴅᴜᴄᴇ ʙᴇsᴛ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ + ᴍᴜsɪᴄ ʙᴏᴛ**
 
 **⍟ A ᴘᴏᴡᴇʀғᴜʟ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴀɴᴅ ᴍᴜsɪᴄ ғᴏʀ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs & ᴄʜᴀɴɴᴇʟs.**
 
-**Wʜʏ ɪᴛ's ɪs ʙᴇsᴛ ?**
+**Wʜʏ ɪᴛ's ʙᴇsᴛ ?**
 • ᴘʀᴏᴍᴏᴛɪᴏɴ / ᴀᴅs ғʀᴇᴇ ʙᴏᴛ ғᴏʀ ʟɪғᴇᴛɪᴍᴇ. ( ᴀᴍ ᴏɴ ᴍʏ ᴡᴏʀᴅs )
 • 24 ʜʀ ᴜᴘᴛɪᴍᴇ.
 • ᴅᴇᴘʟᴏʏᴇᴅ ᴏɴ ʙᴇsᴛ sᴇʀᴠᴇʀ."""
