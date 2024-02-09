@@ -20,7 +20,7 @@ BOT_LIST = ["NexikoBot", "GitWizardBot", "urXdestinyBot"]
 
 
 
-@app.on_message(filters.command("botschk") & SUDOERS)
+@app.on_message(filters.command("bfjlefhk") & SUDOERS)
 async def bots_chk(app, message):
     msg = await message.reply_photo(photo="https://telegra.ph/file/48578068b7574bb25a529.jpg", caption="**ᴄʜᴇᴄᴋɪɴɢ ʙᴏᴛs sᴛᴀᴛs ᴀʟɪᴠᴇ ᴏʀ ᴅᴇᴀᴅ...**")
     response = "**ʙᴏᴛs sᴛᴀᴛᴜs ᴅᴇᴀᴅ ᴏʀ ᴀʟɪᴠᴇ ᴄʜᴇᴄᴋᴇʀ**\n\n"
