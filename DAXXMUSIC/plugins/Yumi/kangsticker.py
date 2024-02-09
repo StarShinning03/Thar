@@ -66,12 +66,12 @@ async def sticker_image(_, message: Message):
 @capture_err
 async def kang(client, message: Message):
     if not message.reply_to_message:
-        return await message.reply_text("Reply to a sticker/image to kang it.")
+        return await message.reply_text("Rᴇᴘʟʏ ᴛᴏ ᴀ ꜱᴛɪᴄᴋᴇʀ/ɪᴍᴀɢᴇ ᴛᴏ ᴋᴀɴɢ ɪᴛ.")
     if not message.from_user:
         return await message.reply_text(
-            "🇾🇴​🇺​ 🇦​🇷​🇪​ 🇦​🇳​🇴​🇳​ 🇦​🇩​🇲​🇮​🇳​, 🇰​🇦​🇳​🇬​ 🇸​🇹​🇮​🇨​🇰​🇪​🇷​🇸​ 🇮​🇳​ 🇲​🇾​ 🇵​🇲​."
+            "Yᴏᴜ ᴀʀᴇ ᴀɴᴏɴ ᴀᴅᴍɪɴ, ᴋᴀɴɢ ꜱᴛɪᴄᴋᴇʀꜱ ɪɴ ᴍʏ ᴘᴍ."
         )
-    msg = await message.reply_text("Kᴀɴɢɪɴɢ sᴛɪᴄᴋᴇʀ...")
+    msg = await message.reply_text("Kanging Sticker..")
 
     # Find the proper emoji
     args = message.text.split()
@@ -110,7 +110,7 @@ async def kang(client, message: Message):
                     temp_file_path
                 )
             except OSError as e:
-                await msg.edit_text("Something wrong happened.")
+                await msg.edit_text("Sᴏᴍᴇᴛʜɪɴɢ ᴡʀᴏɴɢ ʜᴀᴘᴘᴇɴᴇᴅ.")
                 raise Exception(
                     f"Something went wrong while resizing the sticker (at {temp_file_path}); {e}"
                 )
@@ -121,7 +121,7 @@ async def kang(client, message: Message):
             if os.path.isfile(temp_file_path):
                 os.remove(temp_file_path)
         else:
-            return await msg.edit("Nope, can't kang that.")
+            return await msg.edit("Nᴏᴘᴇ, ᴄᴀɴ'ᴛ ᴋᴀɴɢ ᴛʜᴀᴛ.")
     except ShortnameOccupyFailed:
         await message.reply_text("Change Your Name Or Username")
         return
@@ -179,12 +179,12 @@ async def kang(client, message: Message):
             [[InlineKeyboardButton(text="Start", url=f"t.me/{BOT_USERNAME}")]]
         )
         await msg.edit(
-            "You Need To Start A Private Chat With Me.",
+            "Yᴏᴜ ɴᴇᴇᴅ ᴛᴏ ꜱᴛᴀʀᴛ ᴀ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ ᴡɪᴛʜ ᴍᴇ.",
             reply_markup=keyboard,
         )
     except StickerPngNopng:
         await message.reply_text(
-            "​S🇹​🇮​🇨​🇰​🇪​🇷​🇸​ 🇲​🇺​🇸​🇹​ 🇧​🇪​ 🇵​🇳​🇬​ 🇫​🇮​🇱​🇪​🇸​ 🇧​🇺​🇹​ 🇹​🇭​🇪​ 🇵​🇷​🇴​🇻​🇮​🇩​🇪​🇩​ 🇮​🇲​🇦​🇬​🇪​ 🇼​🇦​🇸​ 🇳​🇴​🇹​ 🇦​ 🇵​🇳​🇬​​"
+            "Sᴛɪᴄᴋᴇʀꜱ ᴍᴜꜱᴛ ʙᴇ ᴘɴɢ ꜰɪʟᴇꜱ ʙᴜᴛ ᴛʜᴇ ᴘʀᴏᴠɪᴅᴇᴅ ɪᴍᴀɢᴇ ᴡᴀꜱ ɴᴏᴛ ᴀ ᴘɴɢ"
         )
     except StickerPngDimensions:
-        await message.reply_text("T​🇭​🇪​ 🇸​🇹​🇮​🇨​🇰​🇪​🇷​ 🇵​🇳​🇬​ 🇩​🇮​🇲​🇪​🇳​🇸​🇮​🇴​🇳​🇸​ 🇦​🇷​🇪​ 🇮​🇳​🇻​🇦​🇱​🇮​🇩​.")
+        await message.reply_text("The sticker png dimensions are invalid.")
